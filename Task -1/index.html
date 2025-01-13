@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 1rem;
+        }
+
+        .elements{
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            border-radius: 1.5rem;
+        }
+
+        .object1{
+            width: 30%;
+            background-color: gray;
+        }
+        .object2{
+            color: black;
+            width: 70%;
+            background-color: lightgray;
+        }
+
+        @media screen and (max-width: 576px){
+            .container{
+                flex-direction: column;
+            }
+            .elements{
+                width: 80%;
+            }
+            .object2{
+                height: 180%;
+            }
+            
+        }
+     </style>
+    <title>Task 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="elements object1">
+            Left
+        </div>
+        <div class="elements object2">
+            Right
+        </div>
+    </div>
+</body>
+</html>
